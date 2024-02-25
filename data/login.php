@@ -6,7 +6,6 @@ include('connection.php');
 
 if (empty($_POST['email']) || empty($_POST['password'])) {
     echo "<script>
-        const form = document.querySelector('.login_form').reset();
 
             alert('Rellene todos los campos para ingresar')
             window.history.go(-1);
@@ -22,7 +21,6 @@ if (empty($_POST['email']) || empty($_POST['password'])) {
 
     if (mysqli_num_rows($query_login_result) == 0) {
         echo '<script>
-        const form = document.querySelector(".login_form").reset();
 
         alert("Email o contraseña equivocada, intentelo nuevamente");
         window.location = "../pages/login.php";
@@ -37,7 +35,6 @@ if (empty($_POST['email']) || empty($_POST['password'])) {
             $_SESSION['user'] = $user_name;
             $_SESSION['email'] = $user_email;
             echo '<script>
-            const form = document.querySelector(".login_form").reset();
 
             alert("Has iniciado sesión exitosamente");
             window.location = "../pages/my_tickets.php";
