@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="media/icons/logo/logo.png" type="image/x-icon">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Overlock+SC&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/config.css">
+    <link rel="stylesheet" href="styles/templates/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>TicketApp</title>
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+
+    <div class="header_btn_container">
+        <img src="media/icons/menu/menu_icon.png" alt="" class="header_btn_icon">
+    </div>
+
+    <header class="header">
+        <a href="index.html" class="logo_container">
+            <img src="media/icons/logo/logo.png" alt="" class="logo_icon">
+        </a>
+
+        <nav class="menu_container">
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="index.html" class="menu_a">Inicio</a>
+                </li>
+                <li class="menu_item">
+                    <a href="pages/my_tickets.php" class="menu_a">Mis tickets</a>
+                </li>
+                <li class="menu_item">
+                    <a href="pages/add_ticket.php" class="menu_a">Agregar ticket</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="btns_container">
+            <a href="pages/register.php" class="btn">Registrarse</a>
+            <a href="pages/login.php" class="btn">Ingresar</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main_item">
+            <h1 class="title">TicketApp: CONSEGUI TU TICKET</h1>
+            <p class="desc">Conseguí <strong style="color: var(--color_second);">tu ticket</strong> en la dificultad que
+                deseas, el día que quieras y en cualquier momento.</p>
+            <a href="pages/add_ticket.php" class="main_btn">¡QUIERO MI TICKET!</a>
+        </div>
+        <div class="main_item">
+            <img src="media/images/main/main_img.png" alt="" class="main_img">
+        </div>
+    </main>
+
+    <script src="scripts/header.js"></script>
+
+</body>
+
+</html>

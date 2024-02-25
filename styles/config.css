@@ -1,0 +1,62 @@
+:root {
+    --color_main: #141a28;
+    --color_second: #04f08c;
+    --color_hover: #a0efe0;
+    --color_hover2: #38486e;
+    --color_hover_opacity: #a0efe099;
+    --color_text: #ffffff;
+    --color_easy: #10f004;
+    --color_medium: #f0f004;
+    --color_hard: #f02404;
+    --font_title: "Overlock SC", sans-serif;
+    --font_text: "Bricolage Grotesque", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--color_main);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color_text);
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a,
+li,
+p,
+span,
+input,
+label,
+option,
+select {
+    font-size: 1.1rem;
+    color: var(--color_text);
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}

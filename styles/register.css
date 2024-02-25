@@ -1,0 +1,95 @@
+.main {
+    width: 100%;
+    height: calc(100vh - 100px);
+    min-height: 500px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register_form {
+    width: auto;
+    height: 70%;
+    border: 2px solid var(--color_second);
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_item {
+    width: 300px;
+    height: auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color_second);
+    transition: ease all .4s;
+}
+
+.input:focus {
+    border-bottom: 2px solid var(--color_hover);
+}
+
+.label {
+    position: absolute;
+}
+
+.input:focus + .label {
+    transform: translateY(-100%);
+}
+
+.label {
+    z-index: -100;
+    transition: ease all .4s;
+}
+
+.label.fixed {
+    transform: translateY(-100%);
+}
+
+.submit {
+    background: var(--color_second);
+    color: var(--color_main);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease all .4s;
+}
+
+.form_a {
+    text-align: center;
+    transition: ease all .4s;
+}
+
+@media(hover:hover) {
+    .submit:hover {
+        background: var(--color_hover);
+    }
+
+    .form_a:hover {
+        color: var(--color_hover);
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .main {
+        height: 100vh;
+    }
+}

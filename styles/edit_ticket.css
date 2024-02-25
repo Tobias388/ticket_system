@@ -1,0 +1,129 @@
+.main {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket {
+    width: 80%;
+    height: 300px;
+    border: 2px solid var(--color_second);
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_ticket {
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info_ticket:first-child {
+    width: 60%;
+}
+
+.info_ticket:nth-child(2) {
+    width: 40%;
+}
+
+.ticket_title {
+    width: 100%;
+    height: auto;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color_second);
+    background: transparent;
+    font-size: 2.2rem;
+}
+
+.ticket_desc {
+    width: 100%;
+    height: auto;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color_second);
+    background: transparent;
+    font-size: 1.1rem;
+}
+
+.ticket_desc::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+.ticket_desc::-webkit-scrollbar-thumb {
+    background: var(--color_second);
+    border-radius: 30px;
+}
+
+.form_item {
+    width: 80px;
+}
+
+.radio_container {
+    width: 100%;
+    height: auto;
+    margin-top: 4px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit {
+    width: auto;
+    height: auto;
+    padding: 8px;
+    border-radius: 4px;
+    background: var(--color_second);
+    border: none;
+    color: var(--color_main);
+    outline: none;
+    cursor: pointer;
+    transition: ease all .4s;
+}
+
+.radio {
+    width: auto;
+    height: auto;
+}
+
+.ticket_date {
+    width: auto;
+    height: auto;
+}
+
+.ticket_gif {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media(hover:hover) {
+    .submit:hover {
+        background: var(--color_hover);
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .main {
+        height: 100vh;
+    }
+}
