@@ -1,6 +1,9 @@
 # ticket_system
 Un sistema de tickets compuesto de un sistema de usuarios, creación y edición de tickets integrados con gifs consumiendo la api de Giphy
 
+IMPORTANTE: 
+Al momento de probar el software, tener instalado xampp, activar MySQL y Apache, también crear la base de datos con el nombre ticekt_system e importar el archivo ticket_system.sql a la base de datos
+
 Páginas:
 index (inicio de la app)
 my_tickets (donde se almacenan los tickets, integrada con un filtro para los mismos)
