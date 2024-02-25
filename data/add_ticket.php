@@ -4,8 +4,6 @@ include('connection.php');
 
 if (empty($_POST['title']) || empty($_POST['description']) || empty($_POST['difficulty'])) {
     echo '<script>
-        const form = document.querySelector(".ticket_form").reset();
-
         alert("Rellene todos los campos para agregar un ticket");
         window.location = "../pages/add_ticket.php";
     </script>';
@@ -24,15 +22,11 @@ if (empty($_POST['title']) || empty($_POST['description']) || empty($_POST['diff
 
     if ($query_add_ticket_result) {
         echo '<script>
-            const form = document.querySelector(".ticket_form").reset();
-
             alert("Ticekt agregado con éxito");
             window.location = "../pages/my_tickets.php";
         </script>';
     } else {
         echo '<script>
-            const form = document.querySelector(".ticket_form").reset();
-
             alert("Algo salió mal");
             window.location = "../pages/add_ticket.php";
         </script>';
