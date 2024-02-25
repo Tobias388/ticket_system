@@ -2,7 +2,9 @@
 Un sistema de tickets compuesto de un sistema de usuarios, creación y edición de tickets integrados con gifs consumiendo la api de Giphy
 
 IMPORTANTE: 
-Al momento de probar el software, tener instalado xampp, activar MySQL y Apache, también crear la base de datos con el nombre ticekt_system e importar el archivo ticket_system.sql a la base de datos
+Al momento de probar el software, tener instalado xampp, activar MySQL y Apache, también crear la base de datos con el nombre ticekt_system e importar el archivo ticket_system.sql a la base de datos.
+
+La app puede utilizarse también ingresando a la siguiente url: ticketstobi.000webhostapp.com
 
 Páginas:
 index (inicio de la app)
