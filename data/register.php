@@ -4,7 +4,6 @@ include('connection.php');
 
 if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['age']) || empty($_POST['password']) || empty($_POST['repeat_password'])) {
     echo '<script>
-        const form = document.querySelector(".register_form").reset();
         alert("Rellene todos los campos para registrarse")
         window.history.go(-1);
     </script>';
@@ -18,7 +17,6 @@ if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['age']) || e
 
     if ($password !== $reapeat_password) {
         echo '<script>
-            const form = document.querySelector(".register_form").reset();
             alert("Las contraseñas no coinciden")
             window.history.go(-1);
         </script>';
@@ -29,7 +27,6 @@ if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['age']) || e
 
         if (mysqli_num_rows($query_email_validation_result) > 0) {
             echo '<script>
-                const form = document.querySelector(".register_form").reset();
 
                 alert("Este email ya existe");
                 window.history.go(-1);
@@ -41,7 +38,6 @@ if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['age']) || e
 
             if ($query_register_result) {
                 echo '<script>
-        const form = document.querySelector(".register_form").reset();
 
                     alert("Registrado con éxito");
                     window.location = "../index.html";
